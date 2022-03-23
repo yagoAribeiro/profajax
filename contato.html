@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Prof Ajax</title>
+</head>
+<body>
+    <header>
+        <img src="./img/banner.png" width="300px" height="100px">
+    </header>
+    <nav>
+        <a href="index.html">Home |</a>
+        <a href="musica.html">Músicas para programação |</a>
+        <a href="aulas.html">Aulas |</a>
+        <a href="contato.html">Contato |</a>
+    </nav>
+    <main>
+        <fieldset>
+            <legend>Torne-se aluno!</legend>
+            <form method="GET" action="./contato.html">
+                <label>Nome:</label>
+                <input type="text" placeholder="Seu nome completo" name="txtNome" required>
+                <br>
+                <label>Email:</label>
+                <input type="email" placeholder="email@gmail.com" name="txtEmail" required>
+                <br>
+                <label>Qual data deseja iniciar as aulas?</label>
+                <br>
+                <input type="date" name="txtDate">
+                <br>
+                <label>Qual curso deseja aprender?</label>
+                <br>
+                <input type="checkbox" name="chkClass[]" value="Python">Python<br>
+                <input type="checkbox" name="chkClass[]" value="Java">Java<br>
+                <input type="checkbox" name="chkClass[]" value="C#">C#<br>
+                <input type="checkbox" name="chkClass[]" value="R">R<br>
+                <br>
+                <label>Mensagem:</label>
+                <br>
+                <textarea cols="80" rows="20" name="txtMsg"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+        &copy; - Prof Ajax - 2022
+    </footer>
+</body>
+</html>
